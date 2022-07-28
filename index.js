@@ -1,10 +1,12 @@
 'use strict';
 
-module.exports.OAuth2App = require('./lib/OAuth2App');
-module.exports.OAuth2Driver = require('./lib/OAuth2Driver');
-module.exports.OAuth2Device = require('./lib/OAuth2Device');
-module.exports.OAuth2Client = require('./lib/OAuth2Client');
-module.exports.OAuth2Error = require('./lib/OAuth2Error');
-module.exports.OAuth2Token = require('./lib/OAuth2Token');
-module.exports.OAuth2Util = require('./lib/OAuth2Util');
-module.exports.fetch = require('node-fetch');
+const OAuth2App = require('./lib/OAuth2App');
+const OAuth2Driver = require('./lib/OAuth2Driver');
+const OAuth2Device = require('./lib/OAuth2Device');
+const OAuth2Client = require('./lib/OAuth2Client');
+const OAuth2Error = require('./lib/OAuth2Error');
+const OAuth2Token = require('./lib/OAuth2Token');
+const OAuth2Util = require('./lib/OAuth2Util');
+const fetch = require('node-fetch');
+
+export {OAuth2App, OAuth2Driver, OAuth2Device, OAuth2Client, OAuth2Error, OAuth2Token, OAuth2Util, fetch};
